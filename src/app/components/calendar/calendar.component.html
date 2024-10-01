@@ -1,0 +1,18 @@
+<div class="calendar">
+    <ng-container *ngIf="overlappingGroups else loading">
+        <div class="hour-marker" *ngFor="let hour of hours">
+            {{ hour }}
+          </div>  
+         <ng-container *ngFor="let group of overlappingGroups">
+      <div 
+        class="event" 
+        *ngFor="let event of group; let i = index"
+        [ngStyle]="calculateEventStyle(event, group.length, i)"
+        [id]="event.id"
+      >
+    {{ event.id }}
+      </div>
+    </ng-container>
+    </ng-container>
+    <ng-template #loading>Chargement...</ng-template>
+  </div>

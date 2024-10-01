@@ -1,0 +1,10 @@
+{
+    "events" : [
+    { "id": 11, "start": "10:00", "duration": 90 },
+    { "id": 1, "start": "10:00", "duration": 90 },
+    { "id": 2, "start": "12:30", "duration": 60 },
+    { "id": 44, "start": "12:30", "duration": 80 },
+    { "id": 3, "start": "15:00", "duration": 120 },
+    { "id": 4, "start": "17:30", "duration": 60 }
+    ]
+}
